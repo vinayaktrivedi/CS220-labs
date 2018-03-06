@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/users/btech/vinayakt/Desktop/lab5/LCD_Driver/impact.xsl
+OUTFILE=/users/btech/vinayakt/Desktop/lab5/LCD_Driver/impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=/users/btech/vinayakt/Desktop/lab5/LCD_Driver
+LICENSE=iMPACT
+USER_INFO=iMPACT

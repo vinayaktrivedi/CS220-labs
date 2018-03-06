@@ -1,0 +1,2 @@
+vhdtdtfi -lib work {/media/cse/UBUNTU 16_0/CS220/Lab_1.2/full_ader_schematic/myxor.v} -lang verilog -prj full_ader_schematic -o myxor.spl -module myxor -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e myxor.spl {/media/cse/UBUNTU 16_0/CS220/Lab_1.2/full_ader_schematic/myxor.sym} 

@@ -1,0 +1,18 @@
+xst -intstyle ise -ifn "/media/subhamkr/R_SAXENA/lab2.2/eight_bit_comparator/eight_bit_comp.xst" -ofn "/media/subhamkr/R_SAXENA/lab2.2/eight_bit_comparator/eight_bit_comp.syr" 
+xst -intstyle ise -ifn "/media/subhamkr/R_SAXENA/lab2.2/eight_bit_comparator/eight_bit_comp.xst" -ofn "/media/subhamkr/R_SAXENA/lab2.2/eight_bit_comparator/eight_bit_comp.syr" 
+xst -intstyle ise -ifn "/media/subhamkr/R_SAXENA/lab2.2/eight_bit_comparator/eight_bit_comp.xst" -ofn "/media/subhamkr/R_SAXENA/lab2.2/eight_bit_comparator/eight_bit_comp.syr" 
+xst -intstyle ise -ifn "/media/subhamkr/R_SAXENA/lab2.2/eight_bit_comparator/eight_bit_comp.xst" -ofn "/media/subhamkr/R_SAXENA/lab2.2/eight_bit_comparator/eight_bit_comp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 eight_bit_comp.ngc eight_bit_comp.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o eight_bit_comp_map.ncd eight_bit_comp.ngd eight_bit_comp.pcf 
+par -w -intstyle ise -ol high -t 1 eight_bit_comp_map.ncd eight_bit_comp.ncd eight_bit_comp.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml eight_bit_comp.twx eight_bit_comp.ncd -o eight_bit_comp.twr eight_bit_comp.pcf 
+xst -intstyle ise -ifn "/media/subhamkr/R_SAXENA/lab2.2/eight_bit_comparator/eight_bit_comp.xst" -ofn "/media/subhamkr/R_SAXENA/lab2.2/eight_bit_comparator/eight_bit_comp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc eight_bit_comp.ucf -p xc3s500e-fg320-4 eight_bit_comp.ngc eight_bit_comp.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o eight_bit_comp_map.ncd eight_bit_comp.ngd eight_bit_comp.pcf 
+par -w -intstyle ise -ol high -t 1 eight_bit_comp_map.ncd eight_bit_comp.ncd eight_bit_comp.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml eight_bit_comp.twx eight_bit_comp.ncd -o eight_bit_comp.twr eight_bit_comp.pcf -ucf eight_bit_comp.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc eight_bit_comp.ucf -p xc3s500e-fg320-4 eight_bit_comp.ngc eight_bit_comp.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o eight_bit_comp_map.ncd eight_bit_comp.ngd eight_bit_comp.pcf 
+par -w -intstyle ise -ol high -t 1 eight_bit_comp_map.ncd eight_bit_comp.ncd eight_bit_comp.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml eight_bit_comp.twx eight_bit_comp.ncd -o eight_bit_comp.twr eight_bit_comp.pcf -ucf eight_bit_comp.ucf 
+bitgen -intstyle ise -f eight_bit_comp.ut eight_bit_comp.ncd 

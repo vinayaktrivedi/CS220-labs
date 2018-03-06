@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/media/subhamkr/R_SAXENA/lab2.2/eight_bit_comparator/eight_bit_comp.ncd
+OUTFILE=/media/subhamkr/R_SAXENA/lab2.2/eight_bit_comparator/eight_bit_comp.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=/media/subhamkr/R_SAXENA/lab2.2/eight_bit_comparator
+LICENSE=WebPack
+USER_INFO=211450758_0_0_676

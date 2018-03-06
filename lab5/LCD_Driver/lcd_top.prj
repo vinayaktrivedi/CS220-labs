@@ -1,0 +1,2 @@
+verilog work "initialise.v"
+verilog work "lcd_top.v"

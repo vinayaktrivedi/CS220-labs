@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLCompilers" num="247" delta="new" ><arg fmt="%s" index="1">&quot;comparator.v&quot; line 54 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;Z&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="106" delta="new" ><arg fmt="%s" index="1">&quot;comparator.v&quot; line 54 </arg>Illegal left hand side of nonblocking assignment
+</msg>
+
+<msg type="error" file="HDLCompilers" num="247" delta="new" ><arg fmt="%s" index="1">&quot;comparator.v&quot; line 55 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;Z&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="106" delta="new" ><arg fmt="%s" index="1">&quot;comparator.v&quot; line 55 </arg>Illegal left hand side of nonblocking assignment
+</msg>
+
+<msg type="error" file="HDLCompilers" num="247" delta="new" ><arg fmt="%s" index="1">&quot;comparator.v&quot; line 56 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;Z&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="106" delta="new" ><arg fmt="%s" index="1">&quot;comparator.v&quot; line 56 </arg>Illegal left hand side of nonblocking assignment
+</msg>
+
+<msg type="error" file="HDLCompilers" num="247" delta="new" ><arg fmt="%s" index="1">&quot;comparator.v&quot; line 63 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;Z&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="106" delta="new" ><arg fmt="%s" index="1">&quot;comparator.v&quot; line 63 </arg>Illegal left hand side of nonblocking assignment
+</msg>
+
+<msg type="error" file="HDLCompilers" num="247" delta="new" ><arg fmt="%s" index="1">&quot;comparator.v&quot; line 64 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;Z&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="106" delta="new" ><arg fmt="%s" index="1">&quot;comparator.v&quot; line 64 </arg>Illegal left hand side of nonblocking assignment
+</msg>
+
+<msg type="error" file="HDLCompilers" num="247" delta="new" ><arg fmt="%s" index="1">&quot;comparator.v&quot; line 68 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;Z&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="106" delta="new" ><arg fmt="%s" index="1">&quot;comparator.v&quot; line 68 </arg>Illegal left hand side of nonblocking assignment
+</msg>
+
+<msg type="error" file="HDLCompilers" num="247" delta="new" ><arg fmt="%s" index="1">&quot;comparator.v&quot; line 69 </arg>Reference to <arg fmt="%s" index="2">vector wire &apos;Z&apos;</arg> is not a legal reg or variable lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="106" delta="new" ><arg fmt="%s" index="1">&quot;comparator.v&quot; line 69 </arg>Illegal left hand side of nonblocking assignment
+</msg>
+
+</messages>
+

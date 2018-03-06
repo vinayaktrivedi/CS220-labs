@@ -1,0 +1,4 @@
+MO two_bit_adder NULL ../../Lab1.3/two_bit_adder.v vlg0B/two__bit__adder.bin 1516014945
+MO myxor NULL myxor.v vlg07/myxor.bin 1516013118
+MO full_adder NULL ../../Lab_1.1/full_adder/full_adder.v vlg5A/full__adder.bin 1516014945
+MO full_adder_sch NULL full_adder_sch.vf vlg2F/full__adder__sch.bin 1516013118

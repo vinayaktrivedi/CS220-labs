@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/users/btech/subhamkr/CS220/led_blink/impact.xsl
+OUTFILE=/users/btech/subhamkr/CS220/led_blink/impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=/users/btech/subhamkr/CS220/led_blink
+LICENSE=iMPACT
+USER_INFO=iMPACT

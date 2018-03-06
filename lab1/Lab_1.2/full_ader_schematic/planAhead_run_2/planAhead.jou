@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Mon Jan 15 16:35:04 2018
+# Process ID: 17930
+# Log file: /media/cse/UBUNTU 16_0/CS220/Lab_1.2/full_ader_schematic/planAhead_run_2/planAhead.log
+# Journal file: /media/cse/UBUNTU 16_0/CS220/Lab_1.2/full_ader_schematic/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {/media/cse/UBUNTU 16_0/CS220/Lab_1.2/full_ader_schematic/pa.fromHdl.tcl}
+update_compile_order -fileset sim_1

@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/media/subhamkr/R_SAXENA/lab2.3/impact.xsl
+OUTFILE=/media/subhamkr/R_SAXENA/lab2.3/impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=/media/subhamkr/R_SAXENA/lab2.3
+LICENSE=iMPACT
+USER_INFO=iMPACT

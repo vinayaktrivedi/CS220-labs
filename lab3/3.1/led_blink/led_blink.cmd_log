@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "/users/btech/subhamkr/CS220/led_blink/led_blink.xst" -ofn "/users/btech/subhamkr/CS220/led_blink/led_blink.syr" 
+xst -intstyle ise -ifn "/users/btech/subhamkr/CS220/led_blink/led_blink.xst" -ofn "/users/btech/subhamkr/CS220/led_blink/led_blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 led_blink.ngc led_blink.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o led_blink_map.ncd led_blink.ngd led_blink.pcf 
+par -w -intstyle ise -ol high -t 1 led_blink_map.ncd led_blink.ncd led_blink.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml led_blink.twx led_blink.ncd -o led_blink.twr led_blink.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc led_blink.ucf -p xc3s500e-fg320-4 led_blink.ngc led_blink.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o led_blink_map.ncd led_blink.ngd led_blink.pcf 
+par -w -intstyle ise -ol high -t 1 led_blink_map.ncd led_blink.ncd led_blink.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml led_blink.twx led_blink.ncd -o led_blink.twr led_blink.pcf -ucf led_blink.ucf 
+bitgen -intstyle ise -f led_blink.ut led_blink.ncd 

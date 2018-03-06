@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Mon Feb  5 17:16:39 2018
+# Process ID: 9163
+# Log file: /media/subhamkr/R_SAXENA/lab2.3/five_adder/planAhead_run_1/planAhead.log
+# Journal file: /media/subhamkr/R_SAXENA/lab2.3/five_adder/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /media/subhamkr/R_SAXENA/lab2.3/five_adder/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin N17 [get_ports {X[4]}]
+endgroup
+startgroup
+set_property package_pin H18 [get_ports {X[3]}]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports {X[2]}]
+endgroup
+startgroup
+set_property package_pin L13 [get_ports {X[1]}]
+endgroup
+set_property iostandard LVTTL [get_ports [list {X[4]} {X[3]} {X[2]} {X[1]} {X[0]}]]
+set_property pulltype PULLUP [get_ports [list {X[4]} {X[3]} {X[2]} {X[1]} {X[0]}]]

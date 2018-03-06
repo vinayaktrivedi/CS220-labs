@@ -1,0 +1,71 @@
+
+# PlanAhead Generated IO constraints 
+
+NET "X[3]" IOSTANDARD = LVTTL;
+NET "X[2]" IOSTANDARD = LVTTL;
+NET "X[1]" IOSTANDARD = LVTTL;
+NET "X[0]" IOSTANDARD = LVTTL;
+NET "X[3]" PULLUP;
+NET "X[2]" PULLUP;
+NET "X[1]" PULLUP;
+NET "X[0]" PULLUP;
+
+# PlanAhead Generated physical constraints 
+
+NET "X[3]" LOC = N17;
+NET "X[2]" LOC = H18;
+NET "X[1]" LOC = L14;
+NET "X[0]" LOC = L13;
+
+# PlanAhead Generated IO constraints 
+
+NET "Z[6]" IOSTANDARD = LVTTL;
+NET "Z[5]" IOSTANDARD = LVTTL;
+NET "Z[4]" IOSTANDARD = LVTTL;
+NET "Z[3]" IOSTANDARD = LVTTL;
+NET "Z[2]" IOSTANDARD = LVTTL;
+NET "Z[1]" IOSTANDARD = LVTTL;
+NET "Z[0]" IOSTANDARD = LVTTL;
+NET "Z[6]" DRIVE = 8;
+NET "Z[5]" DRIVE = 8;
+NET "Z[4]" DRIVE = 8;
+NET "Z[3]" DRIVE = 8;
+NET "Z[2]" DRIVE = 8;
+NET "Z[1]" DRIVE = 8;
+NET "Z[0]" DRIVE = 8;
+
+# PlanAhead Generated physical constraints 
+
+NET "Z[0]" LOC = F12;
+NET "Z[1]" LOC = E12;
+NET "Z[2]" LOC = E11;
+NET "Z[3]" LOC = F11;
+NET "Z[4]" LOC = C11;
+NET "Z[5]" LOC = D11;
+NET "Z[6]" LOC = E9;
+NET "clk" LOC = C9;
+
+# PlanAhead Generated IO constraints 
+
+NET "clk" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "overflow" LOC = F9;
+
+# PlanAhead Generated IO constraints 
+
+NET "overflow" IOSTANDARD = LVTTL;
+NET "overflow" DRIVE = 8;
+
+# PlanAhead Generated physical constraints 
+
+NET "rot_a" LOC = K18;
+NET "rot_b" LOC = G18;
+
+# PlanAhead Generated IO constraints 
+
+NET "rot_a" IOSTANDARD = LVTTL;
+NET "rot_b" IOSTANDARD = LVTTL;
+NET "rot_a" PULLUP;
+NET "rot_b" PULLUP;

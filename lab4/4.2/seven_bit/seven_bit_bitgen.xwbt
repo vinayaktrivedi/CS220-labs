@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/media/subhamkr/R_SAXENA/4.2/seven_bit/seven_bit.ncd
+OUTFILE=/media/subhamkr/R_SAXENA/4.2/seven_bit/seven_bit.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=/media/subhamkr/R_SAXENA/4.2/seven_bit
+LICENSE=WebPack
+USER_INFO=211450758_0_0_676

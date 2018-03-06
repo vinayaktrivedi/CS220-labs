@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/vinayak/Desktop/CS220/4.3/game/top_module.ncd
+OUTFILE=/home/vinayak/Desktop/CS220/4.3/game/top_module.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=/home/vinayak/Desktop/CS220/4.3/game
+LICENSE=WebPack
+USER_INFO=211482462_0_0_313

@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "/media/subhamkr/R_SAXENA/lab2.3/five_adder/six_bit_adder.xst" -ofn "/media/subhamkr/R_SAXENA/lab2.3/five_adder/six_bit_adder.syr" 
+xst -intstyle ise -ifn "/media/subhamkr/R_SAXENA/lab2.3/five_adder/six_bit_adder.xst" -ofn "/media/subhamkr/R_SAXENA/lab2.3/five_adder/six_bit_adder.syr" 
+xst -intstyle ise -ifn "/media/subhamkr/R_SAXENA/lab2.3/five_adder/six_bit_adder.xst" -ofn "/media/subhamkr/R_SAXENA/lab2.3/five_adder/six_bit_adder.syr" 
+xst -intstyle ise -ifn "/media/subhamkr/R_SAXENA/lab2.3/five_adder/six_bit_adder.xst" -ofn "/media/subhamkr/R_SAXENA/lab2.3/five_adder/six_bit_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 six_bit_adder.ngc six_bit_adder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o six_bit_adder_map.ncd six_bit_adder.ngd six_bit_adder.pcf 
+par -w -intstyle ise -ol high -t 1 six_bit_adder_map.ncd six_bit_adder.ncd six_bit_adder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml six_bit_adder.twx six_bit_adder.ncd -o six_bit_adder.twr six_bit_adder.pcf 

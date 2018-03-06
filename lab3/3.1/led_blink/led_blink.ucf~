@@ -1,0 +1,17 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "clk" LOC = C9;
+
+# PlanAhead Generated IO constraints 
+
+NET "clk" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "Z" LOC = F12;
+
+# PlanAhead Generated IO constraints 
+
+NET "Z" IOSTANDARD = LVTTL;
+NET "Z" DRIVE = 8;

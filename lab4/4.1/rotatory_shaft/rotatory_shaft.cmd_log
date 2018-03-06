@@ -1,0 +1,23 @@
+xst -intstyle ise -ifn "/home/vinayak/Desktop/CS220/4.1/rotatory_shaft/rotatory_shaft.xst" -ofn "/home/vinayak/Desktop/CS220/4.1/rotatory_shaft/rotatory_shaft.syr" 
+xst -intstyle ise -ifn "/home/vinayak/Desktop/CS220/4.1/rotatory_shaft/rotatory_shaft.xst" -ofn "/home/vinayak/Desktop/CS220/4.1/rotatory_shaft/rotatory_shaft.syr" 
+xst -intstyle ise -ifn "/home/vinayak/Desktop/CS220/4.1/rotatory_shaft/rotatory_shaft.xst" -ofn "/home/vinayak/Desktop/CS220/4.1/rotatory_shaft/rotatory_shaft.syr" 
+xst -intstyle ise -ifn "/home/vinayak/Desktop/CS220/4.1/rotatory_shaft/rotatory_shaft.xst" -ofn "/home/vinayak/Desktop/CS220/4.1/rotatory_shaft/rotatory_shaft.syr" 
+xst -intstyle ise -ifn "/home/vinayak/Desktop/CS220/4.1/rotatory_shaft/rotatory_shaft.xst" -ofn "/home/vinayak/Desktop/CS220/4.1/rotatory_shaft/rotatory_shaft.syr" 
+xst -intstyle ise -ifn "/home/vinayak/Desktop/CS220/4.1/rotatory_shaft/rotatory_shaft.xst" -ofn "/home/vinayak/Desktop/CS220/4.1/rotatory_shaft/rotatory_shaft.syr" 
+xst -intstyle ise -ifn "/home/vinayak/Desktop/CS220/4.1/rotatory_shaft/rotatory_shaft.xst" -ofn "/home/vinayak/Desktop/CS220/4.1/rotatory_shaft/rotatory_shaft.syr" 
+xst -intstyle ise -ifn "/home/vinayak/Desktop/CS220/4.1/rotatory_shaft/rotatory_shaft.xst" -ofn "/home/vinayak/Desktop/CS220/4.1/rotatory_shaft/rotatory_shaft.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 rotatory_shaft.ngc rotatory_shaft.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o rotatory_shaft_map.ncd rotatory_shaft.ngd rotatory_shaft.pcf 
+xst -intstyle ise -ifn "/home/vinayak/Desktop/CS220/4.1/rotatory_shaft/rotatory_shaft.xst" -ofn "/home/vinayak/Desktop/CS220/4.1/rotatory_shaft/rotatory_shaft.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 rotatory_shaft.ngc rotatory_shaft.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o rotatory_shaft_map.ncd rotatory_shaft.ngd rotatory_shaft.pcf 
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o rotatory_shaft_map.ncd rotatory_shaft.ngd rotatory_shaft.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rotatory_shaft.ucf -p xc3s500e-fg320-4 rotatory_shaft.ngc rotatory_shaft.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o rotatory_shaft_map.ncd rotatory_shaft.ngd rotatory_shaft.pcf 
+par -w -intstyle ise -ol high -t 1 rotatory_shaft_map.ncd rotatory_shaft.ncd rotatory_shaft.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rotatory_shaft.twx rotatory_shaft.ncd -o rotatory_shaft.twr rotatory_shaft.pcf -ucf rotatory_shaft.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rotatory_shaft.ucf -p xc3s500e-fg320-4 rotatory_shaft.ngc rotatory_shaft.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o rotatory_shaft_map.ncd rotatory_shaft.ngd rotatory_shaft.pcf 
+par -w -intstyle ise -ol high -t 1 rotatory_shaft_map.ncd rotatory_shaft.ncd rotatory_shaft.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rotatory_shaft.twx rotatory_shaft.ncd -o rotatory_shaft.twr rotatory_shaft.pcf -ucf rotatory_shaft.ucf 
+bitgen -intstyle ise -f rotatory_shaft.ut rotatory_shaft.ncd 

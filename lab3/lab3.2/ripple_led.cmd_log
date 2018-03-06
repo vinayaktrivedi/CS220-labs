@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "/users/btech/subhamkr/lab3.2/ripple_led.xst" -ofn "/users/btech/subhamkr/lab3.2/ripple_led.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ripple_led.ucf -p xc3s500e-fg320-4 ripple_led.ngc ripple_led.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o ripple_led_map.ncd ripple_led.ngd ripple_led.pcf 
+par -w -intstyle ise -ol high -t 1 ripple_led_map.ncd ripple_led.ncd ripple_led.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ripple_led.twx ripple_led.ncd -o ripple_led.twr ripple_led.pcf -ucf ripple_led.ucf 
+bitgen -intstyle ise -f ripple_led.ut ripple_led.ncd 

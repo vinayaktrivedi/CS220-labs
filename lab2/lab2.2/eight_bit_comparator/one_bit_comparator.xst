@@ -1,0 +1,5 @@
+set -tmpdir "/media/subhamkr/R_SAXENA/lab2.2/eight_bit_comparator/xst/projnav.tmp"
+set -xsthdpdir "/media/subhamkr/R_SAXENA/lab2.2/eight_bit_comparator/xst"
+elaborate
+-ifn one_bit_comparator.prj
+-ifmt mixed

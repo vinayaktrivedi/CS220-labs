@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/media/subhamkr/R_SAXENA/lab2.3/five_adder/six_bit_top_module.ncd
+OUTFILE=/media/subhamkr/R_SAXENA/lab2.3/five_adder/six_bit_top_module.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=/media/subhamkr/R_SAXENA/lab2.3/five_adder
+LICENSE=WebPack
+USER_INFO=211450758_0_0_676

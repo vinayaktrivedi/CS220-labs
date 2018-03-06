@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/users/btech/vinayakt/Desktop/lab5/LCD_Driver/initialise.xst" -ofn "/users/btech/vinayakt/Desktop/lab5/LCD_Driver/initialise.syr" 

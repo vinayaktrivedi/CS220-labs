@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "/media/subhamkr/R_SAXENA/lab2.3/five_adder/six_bit_top_module.xst" -ofn "/media/subhamkr/R_SAXENA/lab2.3/five_adder/six_bit_top_module.syr" 
+xst -intstyle ise -ifn "/media/subhamkr/R_SAXENA/lab2.3/five_adder/six_bit_top_module.xst" -ofn "/media/subhamkr/R_SAXENA/lab2.3/five_adder/six_bit_top_module.syr" 
+xst -intstyle ise -ifn "/media/subhamkr/R_SAXENA/lab2.3/five_adder/six_bit_top_module.xst" -ofn "/media/subhamkr/R_SAXENA/lab2.3/five_adder/six_bit_top_module.syr" 
+xst -intstyle ise -ifn "/media/subhamkr/R_SAXENA/lab2.3/five_adder/six_bit_top_module.xst" -ofn "/media/subhamkr/R_SAXENA/lab2.3/five_adder/six_bit_top_module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc six_bit_adder.ucf -p xc3s500e-fg320-4 six_bit_top_module.ngc six_bit_top_module.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o six_bit_top_module_map.ncd six_bit_top_module.ngd six_bit_top_module.pcf 
+par -w -intstyle ise -ol high -t 1 six_bit_top_module_map.ncd six_bit_top_module.ncd six_bit_top_module.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml six_bit_top_module.twx six_bit_top_module.ncd -o six_bit_top_module.twr six_bit_top_module.pcf -ucf six_bit_adder.ucf 
+bitgen -intstyle ise -f six_bit_top_module.ut six_bit_top_module.ncd 
+xst -intstyle ise -ifn "/media/subhamkr/R_SAXENA/lab2.3/five_adder/six_bit_top_module.xst" -ofn "/media/subhamkr/R_SAXENA/lab2.3/five_adder/six_bit_top_module.syr" 
+xst -intstyle ise -ifn "/media/subhamkr/R_SAXENA/lab2.3/five_adder/six_bit_top_module.xst" -ofn "/media/subhamkr/R_SAXENA/lab2.3/five_adder/six_bit_top_module.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc six_bit_adder.ucf -p xc3s500e-fg320-4 six_bit_top_module.ngc six_bit_top_module.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o six_bit_top_module_map.ncd six_bit_top_module.ngd six_bit_top_module.pcf 
+par -w -intstyle ise -ol high -t 1 six_bit_top_module_map.ncd six_bit_top_module.ncd six_bit_top_module.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml six_bit_top_module.twx six_bit_top_module.ncd -o six_bit_top_module.twr six_bit_top_module.pcf -ucf six_bit_adder.ucf 
+bitgen -intstyle ise -f six_bit_top_module.ut six_bit_top_module.ncd 

@@ -1,0 +1,127 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source /media/subhamkr/R_SAXENA/lab2.3/five_adder/pa.fromHdl.tcl
+# create_project -name five_adder -dir "/media/subhamkr/R_SAXENA/lab2.3/five_adder/planAhead_run_2" -part xc3s500efg320-4
+create_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:16 . Memory (MB): peak = 2652.680 ; gain = 20.141
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "six_bit_adder.ucf" [current_fileset -constrset]
+Adding file '/media/subhamkr/R_SAXENA/lab2.3/five_adder/six_bit_adder.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {full_adder.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {four_bit_adder.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {five_bit_adder.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {six_bit_top_module.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top six_bit_top_module $srcset
+# add_files [list {six_bit_adder.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc3s500efg320-4
+Using Verific elaboration
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "/media/subhamkr/R_SAXENA/lab2.3/five_adder/full_adder.v" into library work
+Analyzing Verilog file "/media/subhamkr/R_SAXENA/lab2.3/five_adder/four_bit_adder.v" into library work
+Analyzing Verilog file "/media/subhamkr/R_SAXENA/lab2.3/five_adder/five_bit_adder.v" into library work
+Analyzing Verilog file "/media/subhamkr/R_SAXENA/lab2.3/five_adder/six_bit_top_module.v" into library work
+INFO: [Designutils 20-910] Reading macro library /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockBuffers.xml
+Loading package from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/Package.xml
+Loading io standards from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/SSORules.xml
+Loading list of drcs for the architecture : /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+INFO: [Timing 38-34] Done reading timing library /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+Parsing UCF File [/media/subhamkr/R_SAXENA/lab2.3/five_adder/six_bit_adder.ucf]
+Finished Parsing UCF File [/media/subhamkr/R_SAXENA/lab2.3/five_adder/six_bit_adder.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: f14ba129
+open_rtl_design: Time (s): cpu = 00:01:12 ; elapsed = 00:00:35 . Memory (MB): peak = 2774.066 ; gain = 115.379
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin N17 [get_ports {X[3]}]
+endgroup
+startgroup
+set_property package_pin H18 [get_ports {X[2]}]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports {X[1]}]
+endgroup
+startgroup
+set_property package_pin L13 [get_ports {X[0]}]
+endgroup
+set_property iostandard LVTTL [get_ports [list {X[3]} {X[2]} {X[1]} {X[0]}]]
+set_property pulltype PULLUP [get_ports [list {X[3]} {X[2]} {X[1]} {X[0]}]]
+startgroup
+set_property package_pin F12 [get_ports {Z[0]}]
+endgroup
+startgroup
+set_property package_pin E12 [get_ports {Z[1]}]
+endgroup
+startgroup
+set_property package_pin E11 [get_ports {Z[2]}]
+endgroup
+startgroup
+set_property package_pin F11 [get_ports {Z[3]}]
+endgroup
+startgroup
+set_property package_pin C11 [get_ports {Z[4]}]
+endgroup
+startgroup
+set_property package_pin D11 [get_ports {Z[5]}]
+endgroup
+set_property iostandard LVTTL [get_ports [list {Z[5]} {Z[4]} {Z[3]} {Z[2]} {Z[1]} {Z[0]}]]
+set_property drive 8 [get_ports [list {Z[5]} {Z[4]} {Z[3]} {Z[2]} {Z[1]} {Z[0]}]]
+startgroup
+set_property package_pin E9 [get_ports carry]
+endgroup
+set_property iostandard LVTTL [get_ports [list carry]]
+set_property iostandard LVTTL [get_ports [list PB1]]
+set_property iostandard LVTTL [get_ports [list PB2]]
+set_property iostandard LVTTL [get_ports [list PB3]]
+set_property iostandard LVTTL [get_ports [list PB5]]
+set_property iostandard LVTTL [get_ports [list PB4]]
+set_property pulltype PULLDOWN [get_ports [list PB1]]
+set_property pulltype PULLDOWN [get_ports [list PB2]]
+set_property pulltype PULLDOWN [get_ports [list PB3]]
+set_property pulltype PULLDOWN [get_ports [list PB4]]
+set_property pulltype PULLDOWN [get_ports [list PB5]]
+set_property drive 8 [get_ports [list carry]]
+startgroup
+set_property package_pin V4 [get_ports PB1]
+endgroup
+startgroup
+set_property package_pin K17 [get_ports PB2]
+endgroup
+startgroup
+set_property package_pin H13 [get_ports PB3]
+endgroup
+startgroup
+set_property package_pin D18 [get_ports PB4]
+endgroup
+startgroup
+set_property package_pin V16 [get_ports PB5]
+endgroup
+save_constraints
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Mon Feb  5 17:27:53 2018...
+INFO: [Common 17-83] Releasing license: PlanAhead

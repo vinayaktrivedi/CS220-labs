@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/media/cse/UBUNTU 16_0/CS220/Lab_1.1/full_adder/full_adder_top_isim_beh.exe" -prj "/media/cse/UBUNTU 16_0/CS220/Lab_1.1/full_adder/full_adder_top_beh.prj" "work.full_adder_top" "work.glbl" 

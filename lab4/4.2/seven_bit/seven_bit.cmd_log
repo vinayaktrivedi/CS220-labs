@@ -1,0 +1,43 @@
+xst -intstyle ise -ifn "/media/subhamkr/R_SAXENA/4.2/seven_bit/seven_bit.xst" -ofn "/media/subhamkr/R_SAXENA/4.2/seven_bit/seven_bit.syr" 
+xst -intstyle ise -ifn "/media/subhamkr/R_SAXENA/4.2/seven_bit/seven_bit.xst" -ofn "/media/subhamkr/R_SAXENA/4.2/seven_bit/seven_bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seven_bit.ucf -p xc3s500e-fg320-4 seven_bit.ngc seven_bit.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o seven_bit_map.ncd seven_bit.ngd seven_bit.pcf 
+par -w -intstyle ise -ol high -t 1 seven_bit_map.ncd seven_bit.ncd seven_bit.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml seven_bit.twx seven_bit.ncd -o seven_bit.twr seven_bit.pcf -ucf seven_bit.ucf 
+bitgen -intstyle ise -f seven_bit.ut seven_bit.ncd 
+xst -intstyle ise -ifn "/media/subhamkr/R_SAXENA/4.2/seven_bit/seven_bit.xst" -ofn "/media/subhamkr/R_SAXENA/4.2/seven_bit/seven_bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seven_bit.ucf -p xc3s500e-fg320-4 seven_bit.ngc seven_bit.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o seven_bit_map.ncd seven_bit.ngd seven_bit.pcf 
+par -w -intstyle ise -ol high -t 1 seven_bit_map.ncd seven_bit.ncd seven_bit.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml seven_bit.twx seven_bit.ncd -o seven_bit.twr seven_bit.pcf -ucf seven_bit.ucf 
+bitgen -intstyle ise -f seven_bit.ut seven_bit.ncd 
+xst -intstyle ise -ifn "/media/subhamkr/R_SAXENA/4.2/seven_bit/seven_bit.xst" -ofn "/media/subhamkr/R_SAXENA/4.2/seven_bit/seven_bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seven_bit.ucf -p xc3s500e-fg320-4 seven_bit.ngc seven_bit.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o seven_bit_map.ncd seven_bit.ngd seven_bit.pcf 
+par -w -intstyle ise -ol high -t 1 seven_bit_map.ncd seven_bit.ncd seven_bit.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml seven_bit.twx seven_bit.ncd -o seven_bit.twr seven_bit.pcf -ucf seven_bit.ucf 
+bitgen -intstyle ise -f seven_bit.ut seven_bit.ncd 
+xst -intstyle ise -ifn "/media/subhamkr/R_SAXENA/4.2/seven_bit/seven_bit.xst" -ofn "/media/subhamkr/R_SAXENA/4.2/seven_bit/seven_bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seven_bit.ucf -p xc3s500e-fg320-4 seven_bit.ngc seven_bit.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o seven_bit_map.ncd seven_bit.ngd seven_bit.pcf 
+par -w -intstyle ise -ol high -t 1 seven_bit_map.ncd seven_bit.ncd seven_bit.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml seven_bit.twx seven_bit.ncd -o seven_bit.twr seven_bit.pcf -ucf seven_bit.ucf 
+bitgen -intstyle ise -f seven_bit.ut seven_bit.ncd 
+xst -intstyle ise -ifn "/media/subhamkr/R_SAXENA/4.2/seven_bit/seven_bit.xst" -ofn "/media/subhamkr/R_SAXENA/4.2/seven_bit/seven_bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seven_bit.ucf -p xc3s500e-fg320-4 seven_bit.ngc seven_bit.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o seven_bit_map.ncd seven_bit.ngd seven_bit.pcf 
+par -w -intstyle ise -ol high -t 1 seven_bit_map.ncd seven_bit.ncd seven_bit.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml seven_bit.twx seven_bit.ncd -o seven_bit.twr seven_bit.pcf -ucf seven_bit.ucf 
+bitgen -intstyle ise -f seven_bit.ut seven_bit.ncd 
+xst -intstyle ise -ifn "/media/subhamkr/R_SAXENA/4.2/seven_bit/seven_bit.xst" -ofn "/media/subhamkr/R_SAXENA/4.2/seven_bit/seven_bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seven_bit.ucf -p xc3s500e-fg320-4 seven_bit.ngc seven_bit.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o seven_bit_map.ncd seven_bit.ngd seven_bit.pcf 
+par -w -intstyle ise -ol high -t 1 seven_bit_map.ncd seven_bit.ncd seven_bit.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml seven_bit.twx seven_bit.ncd -o seven_bit.twr seven_bit.pcf -ucf seven_bit.ucf 
+bitgen -intstyle ise -f seven_bit.ut seven_bit.ncd 
+xst -intstyle ise -ifn "/media/subhamkr/R_SAXENA/4.2/seven_bit/seven_bit.xst" -ofn "/media/subhamkr/R_SAXENA/4.2/seven_bit/seven_bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seven_bit.ucf -p xc3s500e-fg320-4 seven_bit.ngc seven_bit.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o seven_bit_map.ncd seven_bit.ngd seven_bit.pcf 
+par -w -intstyle ise -ol high -t 1 seven_bit_map.ncd seven_bit.ncd seven_bit.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml seven_bit.twx seven_bit.ncd -o seven_bit.twr seven_bit.pcf -ucf seven_bit.ucf 
+bitgen -intstyle ise -f seven_bit.ut seven_bit.ncd 

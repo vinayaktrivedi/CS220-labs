@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/home/vinayak/Desktop/CS220/4.1/impact.xsl
+OUTFILE=/home/vinayak/Desktop/CS220/4.1/impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=/home/vinayak/Desktop/CS220/4.1
+LICENSE=iMPACT
+USER_INFO=iMPACT

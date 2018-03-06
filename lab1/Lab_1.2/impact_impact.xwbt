@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/media/cse/UBUNTU 16_0/CS220/Lab_1.2/impact.xsl
+OUTFILE=/media/cse/UBUNTU 16_0/CS220/Lab_1.2/impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=/media/cse/UBUNTU 16_0/CS220/Lab_1.2
+LICENSE=iMPACT
+USER_INFO=iMPACT

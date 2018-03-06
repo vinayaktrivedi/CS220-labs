@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/users/btech/subhamkr/CS220/led_blink/led_blink.ncd
+OUTFILE=/users/btech/subhamkr/CS220/led_blink/led_blink.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=/users/btech/subhamkr/CS220/led_blink
+LICENSE=WebPack
+USER_INFO=211450758_0_0_676

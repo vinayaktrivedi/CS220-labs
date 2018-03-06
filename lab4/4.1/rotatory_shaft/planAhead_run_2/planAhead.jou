@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Mon Feb 12 18:16:41 2018
+# Process ID: 29390
+# Log file: /home/vinayak/Desktop/CS220/4.1/rotatory_shaft/planAhead_run_2/planAhead.log
+# Journal file: /home/vinayak/Desktop/CS220/4.1/rotatory_shaft/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/vinayak/Desktop/CS220/4.1/rotatory_shaft/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
