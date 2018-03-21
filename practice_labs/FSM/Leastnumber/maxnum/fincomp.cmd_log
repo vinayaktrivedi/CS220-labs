@@ -1,0 +1,50 @@
+xst -intstyle ise -ifn "/users/btech/vinayakt/Desktop/Lab6/maxnum/fincomp.xst" -ofn "/users/btech/vinayakt/Desktop/Lab6/maxnum/fincomp.syr" 
+xst -intstyle ise -ifn "/users/btech/vinayakt/Desktop/Lab6/maxnum/fincomp.xst" -ofn "/users/btech/vinayakt/Desktop/Lab6/maxnum/fincomp.syr" 
+xst -intstyle ise -ifn "/users/btech/vinayakt/Desktop/Lab6/maxnum/fincomp.xst" -ofn "/users/btech/vinayakt/Desktop/Lab6/maxnum/fincomp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 fincomp.ngc fincomp.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o fincomp_map.ncd fincomp.ngd fincomp.pcf 
+par -w -intstyle ise -ol high -t 1 fincomp_map.ncd fincomp.ncd fincomp.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fincomp.twx fincomp.ncd -o fincomp.twr fincomp.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fincomp.ucf -p xc3s500e-fg320-4 fincomp.ngc fincomp.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o fincomp_map.ncd fincomp.ngd fincomp.pcf 
+par -w -intstyle ise -ol high -t 1 fincomp_map.ncd fincomp.ncd fincomp.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fincomp.twx fincomp.ncd -o fincomp.twr fincomp.pcf -ucf fincomp.ucf 
+bitgen -intstyle ise -f fincomp.ut fincomp.ncd 
+xst -intstyle ise -ifn "/users/btech/vinayakt/Desktop/Lab6/maxnum/fincomp.xst" -ofn "/users/btech/vinayakt/Desktop/Lab6/maxnum/fincomp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fincomp.ucf -p xc3s500e-fg320-4 fincomp.ngc fincomp.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o fincomp_map.ncd fincomp.ngd fincomp.pcf 
+par -w -intstyle ise -ol high -t 1 fincomp_map.ncd fincomp.ncd fincomp.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fincomp.twx fincomp.ncd -o fincomp.twr fincomp.pcf -ucf fincomp.ucf 
+bitgen -intstyle ise -f fincomp.ut fincomp.ncd 
+xst -intstyle ise -ifn "/users/btech/vinayakt/Desktop/Lab6/maxnum/fincomp.xst" -ofn "/users/btech/vinayakt/Desktop/Lab6/maxnum/fincomp.syr" 
+xst -intstyle ise -ifn "/users/btech/vinayakt/Desktop/Lab6/maxnum/fincomp.xst" -ofn "/users/btech/vinayakt/Desktop/Lab6/maxnum/fincomp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fincomp.ucf -p xc3s500e-fg320-4 fincomp.ngc fincomp.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o fincomp_map.ncd fincomp.ngd fincomp.pcf 
+par -w -intstyle ise -ol high -t 1 fincomp_map.ncd fincomp.ncd fincomp.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fincomp.twx fincomp.ncd -o fincomp.twr fincomp.pcf -ucf fincomp.ucf 
+bitgen -intstyle ise -f fincomp.ut fincomp.ncd 
+xst -intstyle ise -ifn "/users/btech/vinayakt/Desktop/Lab6/maxnum/fincomp.xst" -ofn "/users/btech/vinayakt/Desktop/Lab6/maxnum/fincomp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fincomp.ucf -p xc3s500e-fg320-4 fincomp.ngc fincomp.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o fincomp_map.ncd fincomp.ngd fincomp.pcf 
+par -w -intstyle ise -ol high -t 1 fincomp_map.ncd fincomp.ncd fincomp.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fincomp.twx fincomp.ncd -o fincomp.twr fincomp.pcf -ucf fincomp.ucf 
+bitgen -intstyle ise -f fincomp.ut fincomp.ncd 
+xst -intstyle ise -ifn "/users/btech/vinayakt/Desktop/Lab6/maxnum/fincomp.xst" -ofn "/users/btech/vinayakt/Desktop/Lab6/maxnum/fincomp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fincomp.ucf -p xc3s500e-fg320-4 fincomp.ngc fincomp.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o fincomp_map.ncd fincomp.ngd fincomp.pcf 
+par -w -intstyle ise -ol high -t 1 fincomp_map.ncd fincomp.ncd fincomp.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fincomp.twx fincomp.ncd -o fincomp.twr fincomp.pcf -ucf fincomp.ucf 
+bitgen -intstyle ise -f fincomp.ut fincomp.ncd 
+xst -intstyle ise -ifn "/users/btech/vinayakt/Desktop/Lab6/maxnum/fincomp.xst" -ofn "/users/btech/vinayakt/Desktop/Lab6/maxnum/fincomp.syr" 
+xst -intstyle ise -ifn "/users/btech/vinayakt/Desktop/Lab6/maxnum/fincomp.xst" -ofn "/users/btech/vinayakt/Desktop/Lab6/maxnum/fincomp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fincomp.ucf -p xc3s500e-fg320-4 fincomp.ngc fincomp.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o fincomp_map.ncd fincomp.ngd fincomp.pcf 
+par -w -intstyle ise -ol high -t 1 fincomp_map.ncd fincomp.ncd fincomp.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fincomp.twx fincomp.ncd -o fincomp.twr fincomp.pcf -ucf fincomp.ucf 
+bitgen -intstyle ise -f fincomp.ut fincomp.ncd 
+xst -intstyle ise -ifn "/users/btech/vinayakt/Desktop/Lab6/maxnum/fincomp.xst" -ofn "/users/btech/vinayakt/Desktop/Lab6/maxnum/fincomp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fincomp.ucf -p xc3s500e-fg320-4 fincomp.ngc fincomp.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o fincomp_map.ncd fincomp.ngd fincomp.pcf 
+par -w -intstyle ise -ol high -t 1 fincomp_map.ncd fincomp.ncd fincomp.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fincomp.twx fincomp.ncd -o fincomp.twr fincomp.pcf -ucf fincomp.ucf 
+bitgen -intstyle ise -f fincomp.ut fincomp.ncd 

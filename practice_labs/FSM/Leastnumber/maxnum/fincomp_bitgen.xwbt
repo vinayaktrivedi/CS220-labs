@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/users/btech/vinayakt/Desktop/Lab6/maxnum/fincomp.ncd
+OUTFILE=/users/btech/vinayakt/Desktop/Lab6/maxnum/fincomp.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=/users/btech/vinayakt/Desktop/Lab6/maxnum
+LICENSE=WebPack
+USER_INFO=211450758_0_0_676

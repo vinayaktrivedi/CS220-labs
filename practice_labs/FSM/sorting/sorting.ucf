@@ -1,0 +1,56 @@
+# PlanAhead Generated physical constraints 
+
+NET "X[0]" LOC = L13;
+NET "X[1]" LOC = L14;
+NET "X[2]" LOC = H18;
+NET "X[3]" LOC = N17;
+# PlanAhead Generated IO constraints 
+
+NET "X[3]" IOSTANDARD = LVTTL;
+NET "X[2]" IOSTANDARD = LVTTL;
+NET "X[1]" IOSTANDARD = LVTTL;
+NET "X[0]" IOSTANDARD = LVTTL;
+NET "X[3]" PULLUP;
+NET "X[2]" PULLUP;
+NET "X[1]" PULLUP;
+NET "X[0]" PULLUP;
+
+NET "data[3]" IOSTANDARD = LVCMOS33;
+NET "data[2]" IOSTANDARD = LVCMOS33;
+NET "data[1]" IOSTANDARD = LVCMOS33;
+NET "data[0]" IOSTANDARD = LVCMOS33;
+NET "data[3]" DRIVE = 4;
+NET "data[2]" DRIVE = 4;
+NET "data[1]" DRIVE = 4;
+NET "data[0]" DRIVE = 4;
+
+# PlanAhead Generated physical constraints 
+
+NET "data[3]" LOC = M15;
+NET "data[2]" LOC = P17;
+NET "data[1]" LOC = R16;
+NET "data[0]" LOC = R15;
+NET "lcd_e" LOC = M18;
+
+# PlanAhead Generated IO constraints 
+
+NET "lcd_e" IOSTANDARD = LVCMOS33;
+NET "lcd_e" DRIVE = 4;
+
+# PlanAhead Generated physical constraints 
+
+NET "lcd_rs" LOC = L18;
+NET "lcd_w" LOC = L17;
+
+# PlanAhead Generated IO constraints 
+
+NET "lcd_rs" IOSTANDARD = LVCMOS33;
+NET "lcd_w" IOSTANDARD = LVCMOS33;
+NET "lcd_rs" DRIVE = 4;
+NET "lcd_w" DRIVE = 4;
+
+# PlanAhead Generated physical constraints 
+
+NET "clk" LOC = C9;
+NET "clk" PERIOD = 20.0ns HIGH 50%;
+

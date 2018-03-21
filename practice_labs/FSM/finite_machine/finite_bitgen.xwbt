@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/vinayak/Desktop/CS220/all_labs/practice_labs/FSM/finite_machine/finite.ncd
+OUTFILE=/home/vinayak/Desktop/CS220/all_labs/practice_labs/FSM/finite_machine/finite.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=/home/vinayak/Desktop/CS220/all_labs/practice_labs/FSM/finite_machine
+LICENSE=WebPack
+USER_INFO=211482462_0_0_313

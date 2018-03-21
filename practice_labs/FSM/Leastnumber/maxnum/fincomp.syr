@@ -1,0 +1,605 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> 
+Reading design: fincomp.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "fincomp.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "fincomp"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : fincomp
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "one_bit_comp.v" in library work
+Compiling verilog file "comparator.v" in library work
+Module <one_bit_comp> compiled
+Compiling verilog file "../../initialise.v" in library work
+Module <comparator> compiled
+Compiling verilog file "fincomp.v" in library work
+Module <initialise> compiled
+Module <fincomp> compiled
+No errors in compilation
+Analysis of file <"fincomp.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <fincomp> in library <work>.
+
+Analyzing hierarchy for module <comparator> in library <work>.
+
+Analyzing hierarchy for module <initialise> in library <work>.
+
+Analyzing hierarchy for module <one_bit_comp> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <fincomp>.
+Module <fincomp> is correct for synthesis.
+ 
+Analyzing module <comparator> in library <work>.
+Module <comparator> is correct for synthesis.
+ 
+Analyzing module <one_bit_comp> in library <work>.
+Module <one_bit_comp> is correct for synthesis.
+ 
+Analyzing module <initialise> in library <work>.
+Module <initialise> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <lcd_w> in unit <initialise> has a constant value of 0 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <initialise>.
+    Related source file is "../../initialise.v".
+    Found finite state machine <FSM_0> for signal <waiting>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 75                                             |
+    | Inputs             | 19                                             |
+    | Outputs            | 3                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Power Up State     | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 14                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Power Up State     | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <lcd_e>.
+    Found 1-bit register for signal <lcd_rs>.
+    Found 4-bit register for signal <data>.
+    Found 7-bit register for signal <bits>.
+    Found 7-bit subtractor for signal <bits$addsub0000>.
+    Found 5-bit register for signal <characters>.
+    Found 5-bit adder for signal <characters$addsub0000>.
+    Found 32-bit register for signal <counter>.
+    Found 32-bit adder for signal <counter$share0000>.
+    Found 6-bit register for signal <flag>.
+    Found 6-bit adder for signal <flag$share0000>.
+    Summary:
+	inferred   2 Finite State Machine(s).
+	inferred  56 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   2 Multiplexer(s).
+Unit <initialise> synthesized.
+
+
+Synthesizing Unit <one_bit_comp>.
+    Related source file is "one_bit_comp.v".
+    Found 2-bit register for signal <z>.
+    Found 1-bit xor2 for signal <z$xor0000> created at line 31.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <one_bit_comp> synthesized.
+
+
+Synthesizing Unit <comparator>.
+    Related source file is "comparator.v".
+    Found 3-bit register for signal <Z>.
+    Found 3-bit 4-to-1 multiplexer for signal <Z$mux0000>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <comparator> synthesized.
+
+
+Synthesizing Unit <fincomp>.
+    Related source file is "fincomp.v".
+    Found 3-bit register for signal <Z>.
+    Found 3-bit register for signal <A>.
+    Found 3-bit register for signal <B>.
+    Found 3-bit register for signal <C>.
+    Found 3-bit register for signal <D>.
+    Found 6-bit register for signal <print<125:120>>.
+    Found 6-bit register for signal <print<109:104>>.
+    Found 6-bit register for signal <print<93:88>>.
+    Found 6-bit register for signal <print<77:72>>.
+    Found 6-bit register for signal <print2<125:120>>.
+    Found 6-bit adder for signal <print2_127_120$add0000> created at line 70.
+    Found 6-bit adder for signal <print_111_104$add0000> created at line 64.
+    Found 6-bit adder for signal <print_127_120$add0000> created at line 61.
+    Found 6-bit adder for signal <print_79_72$add0000> created at line 68.
+    Found 6-bit adder for signal <print_95_88$add0000> created at line 66.
+    Summary:
+	inferred  45 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+Unit <fincomp> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 9
+ 32-bit adder                                          : 1
+ 5-bit adder                                           : 1
+ 6-bit adder                                           : 6
+ 7-bit subtractor                                      : 1
+# Registers                                            : 54
+ 1-bit register                                        : 32
+ 2-bit register                                        : 9
+ 3-bit register                                        : 8
+ 32-bit register                                       : 1
+ 4-bit register                                        : 1
+ 5-bit register                                        : 1
+ 6-bit register                                        : 1
+ 7-bit register                                        : 1
+# Multiplexers                                         : 5
+ 1-bit 128-to-1 multiplexer                            : 2
+ 3-bit 4-to-1 multiplexer                              : 3
+# Xors                                                 : 9
+ 1-bit xor2                                            : 9
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <I1/state/FSM> on signal <state[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 00
+ 001   | 01
+ 010   | 11
+ 011   | 10
+-------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <I1/waiting/FSM> on signal <waiting[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 11
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 2
+# Adders/Subtractors                                   : 9
+ 32-bit adder                                          : 1
+ 5-bit adder                                           : 1
+ 6-bit adder                                           : 6
+ 7-bit subtractor                                      : 1
+# Registers                                            : 128
+ Flip-Flops                                            : 128
+# Multiplexers                                         : 11
+ 1-bit 128-to-1 multiplexer                            : 2
+ 1-bit 4-to-1 multiplexer                              : 9
+# Xors                                                 : 9
+ 1-bit xor2                                            : 9
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <print_125> (without init value) has a constant value of 1 in block <fincomp>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <print_124> (without init value) has a constant value of 1 in block <fincomp>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <print_123> (without init value) has a constant value of 0 in block <fincomp>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <print_107> (without init value) has a constant value of 0 in block <fincomp>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <print_109> (without init value) has a constant value of 1 in block <fincomp>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <print_108> (without init value) has a constant value of 1 in block <fincomp>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <print_93> (without init value) has a constant value of 1 in block <fincomp>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <print_92> (without init value) has a constant value of 1 in block <fincomp>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <print_91> (without init value) has a constant value of 0 in block <fincomp>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <print_76> (without init value) has a constant value of 1 in block <fincomp>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <print_77> (without init value) has a constant value of 1 in block <fincomp>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <print_75> (without init value) has a constant value of 0 in block <fincomp>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <print2_123> (without init value) has a constant value of 0 in block <fincomp>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <print2_125> (without init value) has a constant value of 1 in block <fincomp>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <print2_124> (without init value) has a constant value of 1 in block <fincomp>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <fincomp> ...
+
+Optimizing unit <initialise> ...
+WARNING:Xst:1293 - FF/Latch <bits_0> has a constant value of 1 in block <initialise>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <bits_1> has a constant value of 1 in block <initialise>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <bits_0> has a constant value of 1 in block <initialise>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <bits_1> has a constant value of 1 in block <initialise>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <comparator> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block fincomp, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 115
+ Flip-Flops                                            : 115
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : fincomp.ngr
+Top Level Output File Name         : fincomp
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 18
+
+Cell Usage :
+# BELS                             : 369
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 31
+#      LUT2                        : 16
+#      LUT2_D                      : 5
+#      LUT2_L                      : 5
+#      LUT3                        : 27
+#      LUT3_D                      : 12
+#      LUT3_L                      : 1
+#      LUT4                        : 146
+#      LUT4_D                      : 8
+#      LUT4_L                      : 22
+#      MUXCY                       : 39
+#      MUXF5                       : 20
+#      MUXF6                       : 1
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 115
+#      FD                          : 95
+#      FDR                         : 3
+#      FDS                         : 17
+# Clock Buffers                    : 5
+#      BUFGP                       : 5
+# IO Buffers                       : 13
+#      IBUF                        : 3
+#      OBUF                        : 10
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      151  out of   4656     3%  
+ Number of Slice Flip Flops:            115  out of   9312     1%  
+ Number of 4 input LUTs:                275  out of   9312     2%  
+ Number of IOs:                          18
+ Number of bonded IOBs:                  18  out of    232     7%  
+ Number of GCLKs:                         5  out of     24    20%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+PB2                                | BUFGP                  | 3     |
+PB1                                | BUFGP                  | 3     |
+PB3                                | BUFGP                  | 3     |
+PB4                                | BUFGP                  | 3     |
+clk                                | BUFGP                  | 103   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 8.829ns (Maximum Frequency: 113.263MHz)
+   Minimum input arrival time before clock: 2.113ns
+   Maximum output required time after clock: 4.394ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 8.829ns (frequency: 113.263MHz)
+  Total number of paths / destination ports: 6363 / 106
+-------------------------------------------------------------------------
+Delay:               8.829ns (Levels of Logic = 7)
+  Source:            I1/flag_2 (FF)
+  Destination:       I1/flag_5 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: I1/flag_2 to I1/flag_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              19   0.591   1.260  I1/flag_2 (I1/flag_2)
+     LUT3_D:I0->O          4   0.704   0.622  I1/data_mux0000<1>421 (I1/N511)
+     LUT3_D:I2->LO         1   0.704   0.104  I1/state_FSM_FFd2-In14 (N182)
+     LUT4:I3->O            6   0.704   0.844  I1/flag_mux0000<0>11 (I1/N2)
+     LUT4:I0->O            1   0.704   0.000  I1/flag_mux0000<4>1_G (N152)
+     MUXF5:I1->O           2   0.321   0.451  I1/flag_mux0000<4>1 (I1/N20)
+     LUT4_L:I3->LO         1   0.704   0.104  I1/flag_mux0000<5>_SW0 (N49)
+     LUT4:I3->O            1   0.704   0.000  I1/flag_mux0000<5> (I1/flag_mux0000<5>)
+     FD:D                      0.308          I1/flag_5
+    ----------------------------------------
+    Total                      8.829ns (5.444ns logic, 3.385ns route)
+                                       (61.7% logic, 38.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'PB2'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              2.113ns (Levels of Logic = 1)
+  Source:            X<0> (PAD)
+  Destination:       B_0 (FF)
+  Destination Clock: PB2 rising
+
+  Data Path: X<0> to B_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.218   0.587  X_0_IBUF (X_0_IBUF)
+     FD:D                      0.308          B_0
+    ----------------------------------------
+    Total                      2.113ns (1.526ns logic, 0.587ns route)
+                                       (72.2% logic, 27.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'PB1'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              2.113ns (Levels of Logic = 1)
+  Source:            X<0> (PAD)
+  Destination:       A_0 (FF)
+  Destination Clock: PB1 rising
+
+  Data Path: X<0> to A_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.218   0.587  X_0_IBUF (X_0_IBUF)
+     FD:D                      0.308          A_0
+    ----------------------------------------
+    Total                      2.113ns (1.526ns logic, 0.587ns route)
+                                       (72.2% logic, 27.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'PB3'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              2.113ns (Levels of Logic = 1)
+  Source:            X<0> (PAD)
+  Destination:       C_0 (FF)
+  Destination Clock: PB3 rising
+
+  Data Path: X<0> to C_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.218   0.587  X_0_IBUF (X_0_IBUF)
+     FD:D                      0.308          C_0
+    ----------------------------------------
+    Total                      2.113ns (1.526ns logic, 0.587ns route)
+                                       (72.2% logic, 27.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'PB4'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              2.113ns (Levels of Logic = 1)
+  Source:            X<0> (PAD)
+  Destination:       D_0 (FF)
+  Destination Clock: PB4 rising
+
+  Data Path: X<0> to D_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.218   0.587  X_0_IBUF (X_0_IBUF)
+     FD:D                      0.308          D_0
+    ----------------------------------------
+    Total                      2.113ns (1.526ns logic, 0.587ns route)
+                                       (72.2% logic, 27.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Offset:              4.394ns (Levels of Logic = 1)
+  Source:            I1/lcd_e (FF)
+  Destination:       lcd_e (PAD)
+  Source Clock:      clk rising
+
+  Data Path: I1/lcd_e to lcd_e
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              3   0.591   0.531  I1/lcd_e (I1/lcd_e)
+     OBUF:I->O                 3.272          lcd_e_OBUF (lcd_e)
+    ----------------------------------------
+    Total                      4.394ns (3.863ns logic, 0.531ns route)
+                                       (87.9% logic, 12.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 61.00 secs
+Total CPU time to Xst completion: 51.22 secs
+ 
+--> 
+
+
+Total memory usage is 532512 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   22 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

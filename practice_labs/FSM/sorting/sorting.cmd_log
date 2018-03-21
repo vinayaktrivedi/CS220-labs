@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "/home/vinayak/Desktop/CS220/all_labs/practice_labs/FSM/sorting/sorting/sorting.xst" -ofn "/home/vinayak/Desktop/CS220/all_labs/practice_labs/FSM/sorting/sorting/sorting.syr" 
+xst -intstyle ise -ifn "/home/vinayak/Desktop/CS220/all_labs/practice_labs/FSM/sorting/sorting/sorting.xst" -ofn "/home/vinayak/Desktop/CS220/all_labs/practice_labs/FSM/sorting/sorting/sorting.syr" 
+xst -intstyle ise -ifn "/home/vinayak/Desktop/CS220/all_labs/practice_labs/FSM/sorting/sorting/sorting.xst" -ofn "/home/vinayak/Desktop/CS220/all_labs/practice_labs/FSM/sorting/sorting/sorting.syr" 
+xst -intstyle ise -ifn "/home/vinayak/Desktop/CS220/all_labs/practice_labs/FSM/sorting/sorting/sorting.xst" -ofn "/home/vinayak/Desktop/CS220/all_labs/practice_labs/FSM/sorting/sorting/sorting.syr" 
+xst -intstyle ise -ifn "/home/vinayak/Desktop/CS220/all_labs/practice_labs/FSM/sorting/sorting/sorting.xst" -ofn "/home/vinayak/Desktop/CS220/all_labs/practice_labs/FSM/sorting/sorting/sorting.syr" 
+xst -intstyle ise -ifn "/home/vinayak/Desktop/CS220/all_labs/practice_labs/FSM/sorting/sorting/sorting.xst" -ofn "/home/vinayak/Desktop/CS220/all_labs/practice_labs/FSM/sorting/sorting/sorting.syr" 
+xst -intstyle ise -ifn "/home/vinayak/Desktop/CS220/all_labs/practice_labs/FSM/sorting/sorting/sorting.xst" -ofn "/home/vinayak/Desktop/CS220/all_labs/practice_labs/FSM/sorting/sorting/sorting.syr" 
+xst -intstyle ise -ifn "/home/vinayak/Desktop/CS220/all_labs/practice_labs/FSM/sorting/sorting/sorting.xst" -ofn "/home/vinayak/Desktop/CS220/all_labs/practice_labs/FSM/sorting/sorting/sorting.syr" 
+xst -intstyle ise -ifn "/users/btech/vinayakt/Desktop/sorting/sorting.xst" -ofn "/users/btech/vinayakt/Desktop/sorting/sorting.syr" 
+xst -intstyle ise -ifn "/users/btech/vinayakt/Desktop/sorting/sorting.xst" -ofn "/users/btech/vinayakt/Desktop/sorting/sorting.syr" 
+xst -intstyle ise -ifn "/users/btech/vinayakt/Desktop/sorting/sorting.xst" -ofn "/users/btech/vinayakt/Desktop/sorting/sorting.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sorting.ucf -p xc3s500e-fg320-4 sorting.ngc sorting.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o sorting_map.ncd sorting.ngd sorting.pcf 
+par -w -intstyle ise -ol high -t 1 sorting_map.ncd sorting.ncd sorting.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml sorting.twx sorting.ncd -o sorting.twr sorting.pcf -ucf sorting.ucf 
+bitgen -intstyle ise -f sorting.ut sorting.ncd 

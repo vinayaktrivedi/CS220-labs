@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "/home/vinayak/Desktop/CS220/all_labs/practice_labs/FSM/finite_machine/finite.xst" -ofn "/home/vinayak/Desktop/CS220/all_labs/practice_labs/FSM/finite_machine/finite.syr" 
+xst -intstyle ise -ifn "/home/vinayak/Desktop/CS220/all_labs/practice_labs/FSM/finite_machine/finite.xst" -ofn "/home/vinayak/Desktop/CS220/all_labs/practice_labs/FSM/finite_machine/finite.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 finite.ngc finite.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o finite_map.ncd finite.ngd finite.pcf 
+par -w -intstyle ise -ol high -t 1 finite_map.ncd finite.ncd finite.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml finite.twx finite.ncd -o finite.twr finite.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finite.ucf -p xc3s500e-fg320-4 finite.ngc finite.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o finite_map.ncd finite.ngd finite.pcf 
+par -w -intstyle ise -ol high -t 1 finite_map.ncd finite.ncd finite.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml finite.twx finite.ncd -o finite.twr finite.pcf -ucf finite.ucf 
+bitgen -intstyle ise -f finite.ut finite.ncd 

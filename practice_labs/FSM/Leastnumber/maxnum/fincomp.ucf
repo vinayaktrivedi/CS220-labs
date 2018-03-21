@@ -1,0 +1,93 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "X[0]" LOC = L13;
+NET "X[1]" LOC = L14;
+NET "X[2]" LOC = H18;
+
+# PlanAhead Generated IO constraints 
+
+
+NET "X[2]" IOSTANDARD = LVTTL;
+NET "X[1]" IOSTANDARD = LVTTL;
+NET "X[0]" IOSTANDARD = LVTTL;
+NET "X[2]" PULLUP;
+NET "X[1]" PULLUP;
+NET "X[0]" PULLUP;
+
+NET "Z[0]" LOC = F12;
+NET "Z[1]" LOC = E12;
+NET "Z[2]" LOC = E11;
+
+# PlanAhead Generated IO constraints 
+
+NET "Z[2]" IOSTANDARD = LVTTL;
+NET "Z[1]" IOSTANDARD = LVTTL;
+NET "Z[0]" IOSTANDARD = LVTTL;
+NET "Z[2]" DRIVE = 8;
+NET "Z[1]" DRIVE = 8;
+NET "Z[0]" DRIVE = 8;
+# PlanAhead Generated IO constraints 
+
+NET "data[3]" IOSTANDARD = LVCMOS33;
+NET "data[2]" IOSTANDARD = LVCMOS33;
+NET "data[1]" IOSTANDARD = LVCMOS33;
+NET "data[0]" IOSTANDARD = LVCMOS33;
+NET "data[3]" DRIVE = 4;
+NET "data[2]" DRIVE = 4;
+NET "data[1]" DRIVE = 4;
+NET "data[0]" DRIVE = 4;
+
+# PlanAhead Generated physical constraints 
+
+NET "data[3]" LOC = M15;
+NET "data[2]" LOC = P17;
+NET "data[1]" LOC = R16;
+NET "data[0]" LOC = R15;
+NET "lcd_e" LOC = M18;
+
+# PlanAhead Generated IO constraints 
+
+NET "lcd_e" IOSTANDARD = LVCMOS33;
+NET "lcd_e" DRIVE = 4;
+
+# PlanAhead Generated physical constraints 
+
+NET "lcd_rs" LOC = L18;
+NET "lcd_w" LOC = L17;
+
+# PlanAhead Generated IO constraints 
+
+NET "lcd_rs" IOSTANDARD = LVCMOS33;
+NET "lcd_w" IOSTANDARD = LVCMOS33;
+NET "lcd_rs" DRIVE = 4;
+NET "lcd_w" DRIVE = 4;
+
+# PlanAhead Generated physical constraints 
+
+NET "clk" LOC = C9;
+NET "clk" PERIOD = 20.0ns HIGH 50%;
+
+# PlanAhead Generated physical constraints 
+
+NET "PB1" LOC = V4;
+NET "PB2" LOC = K17;
+NET "PB3" LOC = D18;
+NET "PB4" LOC = H13;
+
+# PlanAhead Generated IO constraints 
+
+NET "PB1" IOSTANDARD = LVTTL;
+NET "PB2" IOSTANDARD = LVTTL;
+NET "PB3" IOSTANDARD = LVTTL;
+NET "PB4" IOSTANDARD = LVTTL;
+NET "PB1" PULLDOWN;
+NET "PB2" PULLDOWN;
+NET "PB3" PULLDOWN;
+NET "PB4" PULLDOWN;
+NET "PB1" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "PB2" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "PB3" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "PB4" CLOCK_DEDICATED_ROUTE = FALSE;
+
+

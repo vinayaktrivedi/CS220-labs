@@ -1,0 +1,4 @@
+verilog work "one_bit_comp.v"
+verilog work "comparator.v"
+verilog work "../../initialise.v"
+verilog work "fincomp.v"

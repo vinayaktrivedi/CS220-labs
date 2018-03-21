@@ -1,0 +1,4 @@
+MO fincomp NULL fincomp.v vlg20/fincomp.bin 1520856127
+MO one_bit_comp NULL one_bit_comp.v vlg46/one__bit__comp.bin 1520856126
+MO initialise NULL ../../initialise.v vlg53/initialise.bin 1520856127
+MO comparator NULL comparator.v vlg6C/comparator.bin 1520856126
